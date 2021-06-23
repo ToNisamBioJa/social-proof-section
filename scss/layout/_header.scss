@@ -1,0 +1,40 @@
+.header {
+  text-align: center;
+
+  &__content {
+    &--title {
+      margin-bottom: 1rem;
+      color: hsl(300, 43%, 22%);
+      font-weight: 700;
+      line-height: 1.1;
+    }
+
+    &--text {
+      font-size: 14px;
+      color: hsl(303, 10%, 53%);
+      line-height: 1.6;
+    }
+  }
+}
+
+.ratings {
+  padding: 2rem 0 3rem;
+
+  &__rating {
+    margin-top: 1rem;
+    padding: 1rem;
+    background-color: hsl(300, 24%, 96%);
+    border-radius: 10px;
+
+    &--text {
+      padding-top: 0.5rem;
+      color: hsl(300, 43%, 22%);
+      font-size: 13px;
+      font-weight: 700;
+    }
+  }
+}
+
+.star {
+  padding-left: 0.4rem;
+}

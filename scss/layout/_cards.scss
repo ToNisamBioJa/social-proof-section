@@ -1,0 +1,38 @@
+.card {
+  margin-top: 1rem;
+  padding: 2rem 1.6rem;
+  background-color: hsl(300, 43%, 22%);
+  border-radius: 10px;
+
+  &__split {
+    display: flex;
+    align-items: center;
+
+    &--img {
+      width: 45px;
+      border-radius: 50px;
+    }
+  }
+
+  &__profile {
+    padding-left: 1rem;
+
+    &--name {
+      color: #fff;
+      font-weight: 700;
+    }
+
+    &--status {
+      margin-top: 0.2rem;
+      color: hsl(333, 80%, 67%);
+      font-weight: 400;
+    }
+  }
+
+  &__text {
+    padding-top: 1.5rem;
+    color: hsl(300, 24%, 96%);
+    font-size: 13px;
+    line-height: 1.7;
+  }
+}

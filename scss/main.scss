@@ -1,0 +1,115 @@
+@import "base/globals";
+@import "base/reset";
+
+@import "layout/header";
+@import "layout/cards";
+
+@media (min-width: 600px) {
+  .header__content--title {
+    font-size: 2.5rem;
+  }
+
+  .header__content--text {
+    font-size: 15px;
+  }
+
+  .colton {
+    transform: translateX(-25%);
+  }
+
+  .anne {
+    transform: translateX(25%);
+  }
+}
+
+@media (min-width: 900px) {
+  body {
+    min-height: 100vh;
+    background-color: hsl(300, 24%, 96%);
+    background-image: url("../images/bg-pattern-top-desktop.svg"),
+      url("../images/bg-pattern-bottom-desktop.svg");
+    background-position: top left, bottom right;
+    background-repeat: no-repeat;
+  }
+
+  .container {
+    max-width: 1200px;
+  }
+
+  .header {
+    display: grid;
+    grid-template-columns: 1fr 1.4fr;
+    grid-gap: 1rem;
+    align-items: center;
+    text-align: left;
+  }
+
+  .header__content {
+    grid-column: 1 / 2;
+  }
+
+  .ratings {
+    grid-column: 2 / 3;
+    justify-self: flex-end;
+
+    &__rating {
+      display: flex;
+      align-items: flex-end;
+      max-width: 400px;
+
+      &--text {
+        margin-bottom: 0.25rem;
+        margin-left: 2rem;
+      }
+    }
+  }
+
+  .quotes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+  }
+
+  .colton {
+    transform: translateX(0);
+  }
+
+  .irene {
+    transform: translateY(20px);
+  }
+
+  .anne {
+    transform: translateX(0);
+    transform: translateY(40px);
+  }
+}
+
+@media (min-width: 1200px) {
+  .header {
+    grid-gap: 7rem;
+
+    &__content--title {
+      font-size: 3rem;
+      line-height: 1;
+    }
+  }
+
+  .ratings {
+    justify-self: center;
+  }
+
+  .guru {
+    transform: translateX(50px);
+  }
+
+  .besttech {
+    transform: translateX(100px);
+  }
+
+  .card {
+    &__text {
+      margin-bottom: 0.5rem;
+      font-size: 15px;
+    }
+  }
+}
