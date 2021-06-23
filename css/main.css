@@ -136,7 +136,6 @@ ul {
 @media (min-width: 900px) {
   body {
     min-height: 100vh;
-    background-color: #f7f2f7;
     background-image: url("../images/bg-pattern-top-desktop.svg"), url("../images/bg-pattern-bottom-desktop.svg");
     background-position: top left, bottom right;
     background-repeat: no-repeat;
